@@ -70,24 +70,3 @@ if __name__ == '__main__':
     os.system("mn -c > /dev/null 2>&1")   
     setLogLevel('info')
     emptyNet(15)
-
-
-'''
-G = nx.Graph()
-N = 15
-for i in range(1,N):
-    G.add_edge(i, i+1)
-    print(i)
-    
-G.add_edge(N,1)
-myFalseEdges = []
-nodes = [i for i in range(1, N+1)]
-for i in range(1,20):
-    s = random.choice(nodes)
-    t = random.choice(nodes)
-    if t != s:
-        print(str(s),"<->",str(t))
-        if not (t in sorted(nx.all_neighbors(G,s))):
-            print("can use this one!")
-            if not (tuple(sorted((s,t))) in myFalseEdges):
-                myFalseEdges.append(tuple(sorted((s,t))))'''

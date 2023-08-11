@@ -41,13 +41,6 @@ def emptyNet(N):
          for index2 in range(index+1, len(switch_list)):    #len(switch_list)
             net.addLink(switch_list[index], switch_list[index2])
     #net.addLink(switch_list[N], switch_list[1])
-
-    #        print(j)
-    #        net.addLink(switch_list[i], switch_list[j])
-    #net.addLink(h1,s1)
-    #net.addLink(h2,s3)
-    #switchList = (s1,s2,s3,s4)
-    #for index in range(0,len(switch_list)):
     
     G = nx.Graph()
     myFalseEdges = []
